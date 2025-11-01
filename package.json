@@ -4,7 +4,9 @@
   "description": "https://www.youtube.com/watch?v=ZpY5KdGQvwI",
   "main": "index.js",
   "scripts": {
+    "dev": "tsx watch src/index.ts",
     "start": "node ./build/index.js",
+    "lint": "ts-standard",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -22,9 +24,17 @@
   "homepage": "https://github.com/notinia/node-api-rest#readme",
   "devDependencies": {
     "@types/express": "^5.0.5",
+    "ts-standard": "^12.0.2",
+    "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   },
   "dependencies": {
     "express": "5.1.0"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "project": "./tsconfig.json"
+    },
+    "extends":["./node_modules/ts-standard/eslintrc.json"]
   }
 }
