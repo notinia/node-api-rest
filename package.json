@@ -1,0 +1,30 @@
+{
+  "name": "api-rest",
+  "version": "1.0.0",
+  "description": "https://www.youtube.com/watch?v=ZpY5KdGQvwI",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "tsc": "tsc",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/notinia/node-api-rest.git"
+  },
+  "keywords": [],
+  "author": "",
+  "type": "module",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/notinia/node-api-rest/issues"
+  },
+  "homepage": "https://github.com/notinia/node-api-rest#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "express": "5.1.0"
+  }
+}
