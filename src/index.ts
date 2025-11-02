@@ -1,5 +1,5 @@
 import express from 'express';
-import diarieRouter from './routes/diaries.js';
+import diarieRouter from './routes/diaries';
 
 /* Simple express server */
 
@@ -12,6 +12,7 @@ const PORT = 3000;
 /* Devolver todas las entradas del diario (diary-entries.json) */
 
 // En la ruta /api/diaries se usa --> diarieRouter
+// Gestiona las subrutas de /api/diaries y se encuentra en ./routes/diaries.ts
 app.use('/api/diaries', diarieRouter);
 
 // _req indica que se ignora

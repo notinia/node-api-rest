@@ -43,5 +43,6 @@
     "skipLibCheck": true,
     "moduleResolution": "Bundler",
     "resolveJsonModule": true,
+    "useUnknownInCatchVariables": false  // evitar error en el catch ya que viene como unknown ^TS 4.0
   }
 }
